@@ -1,0 +1,524 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<title>
+Muzyka dnia
+</title>
+
+<style type="text/css">
+ul, ul li {
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	float: left;
+	background-color: #fff;
+	padding: 1px 0 1px 1px;
+	border: 1px solid #000;
+}
+
+ul li {
+	float: left;
+}
+
+ul a:link, ul a:visited {
+	text-decoration: none;
+	display: block;
+	font-weight: bold;
+	background: #000 url("tlo.gif") repeat-x center;
+	color: #fff;
+	padding: 10px 20px;
+	border-right: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+
+ul a:hover {
+	background-color: #800;
+	background-image: url("tlo2.gif");
+}
+
+</style>
+
+</head>
+<body bgcolor="black" text="#990000">
+
+<fieldset>
+<ul><a href="index0.html">Przewodnik</a></ul>
+<ul><a href="index2.html">Sprzęt</a></ul>
+<ul><a href="http://www.xfire.com/profile/fuadex/screenshots/">Fotki</a></ul>
+<ul><a href="index5.html">Muzyka</a></ul>
+<ul><a href="index6.1.html">Recenzje gier</a></ul>
+<ul><a href="index7.html">Ulepszanie PC</a></ul>
+<ul><a href="index8.html">Download</a></ul>
+<ul><a href="index9.html">Artykuły</a></ul>
+<ul><a href="http://www.youtube.com/user/Fuadexfs">Wideo</a></ul><p>
+</fieldset><p>
+
+
+<!--start kodu-->
+<table border="1" cellspacing="1" style="border-collapse: collapse; font-family: Verdana; font-size: 10 px; bordercolor: #000000; width: 90; height: 50;" bgcolor="#000000" align="right">
+<tr><td align="center" style="background-image:url()">
+<div style="position: relative; top: 2; left:0;">
+<a href="http://dodatki.blogowicz.info/skrypty,na,www/dodatki,bloga/kalendarze,na,bloga/" title="kalendarze na bloga"></a>
+<p style="font-size: 10px; font-family: tahoma; color: #990000;">
+
+
+<FONT face='tahoma'>
+<table border=0 style='font-size : 10px; color : #990000;' cellpadding=0 cellspacing=1>
+<script language="JavaScript">
+<!--//Begin
+
+monthnames = new Array(
+"Styczeń",
+"Luty",
+"Marzec",
+"Kwiecień",
+"Maj",
+"Czerwiec",
+"Lipiec",
+"Sierpień",
+"Wrzesień",
+"Pa?ziernik",
+"Listopad",
+"Grudzień");
+var linkcount=0;
+function addlink(month, day, href) {
+var entry = new Array(3);
+entry[0] = month;
+entry[1] = day;
+entry[2] = href;
+this[linkcount++] = entry;
+}
+Array.prototype.addlink = addlink;
+linkdays = new Array();
+monthdays = new Array(12);
+monthdays[0]=31;
+monthdays[1]=28;
+monthdays[2]=31;
+monthdays[3]=30;
+monthdays[4]=31;
+monthdays[5]=30;
+monthdays[6]=31;
+monthdays[7]=31;
+monthdays[8]=30;
+monthdays[9]=31;
+monthdays[10]=30;
+monthdays[11]=31;
+todayDate=new Date();
+thisday=todayDate.getDay();
+thismonth=todayDate.getMonth();
+thisdate=todayDate.getDate();
+thisyear=todayDate.getYear();
+thisyear = thisyear % 100;
+thisyear = ((thisyear < 50) ? (2000 + thisyear) : (1900 + thisyear));
+if (((thisyear % 4 == 0)
+&& !(thisyear % 100 == 0))
+||(thisyear % 400 == 0)) monthdays[1]++;
+startspaces=thisdate;
+while (startspaces > 7) startspaces-=7;
+startspaces = thisday - startspaces + 0;
+if (startspaces < 0) startspaces+=7;
+document.write("<tr><td colspan=7><center><i>"
++ monthnames[thismonth] + " " + thisyear
++ "</i></center></td></tr>");
+document.write("<tr>");
+document.write("<td align=center>Pn</td>");
+document.write("<td align=center>Wt</td>");
+document.write("<td align=center>Sr</td>");
+document.write("<td align=center>Cz</td>");
+document.write("<td align=center>Pt</td>");
+document.write("<td align=center>So</font></td>");
+document.write("<td align=center>Nd</font></td>");
+document.write("</tr>");
+document.write("<tr>");
+for (s=0;s<startspaces;s++) {
+document.write("<td></td>");
+}
+count=1;
+while (count <= monthdays[thismonth]) {
+for (b = startspaces;b<7;b++) {
+linktrue=false;
+document.write("<td>");
+for (c=0;c<linkdays.length;c++) {
+if (linkdays[c] != null) {
+if ((linkdays[c][0]==thismonth + 1) && (linkdays[c][1]==count)) {
+document.write("<a href=\"" + linkdays[c][2] + "\">");
+linktrue=true;
+}
+}
+}
+songs = new Array(31);
+songs[1] = "Linkin Park - New Divine";
+songs[2] = "Metallica - Ride The Lightning";
+songs[3] = "Rammstein - America";
+songs[4] = "Dope - Slipping Away";
+songs[5] = "Sabaton - 40:1";
+songs[6] = "Testament - More Than Meets The Eye";
+songs[7] = "Trivium - Down From The Sky";
+songs[8] = "Amon Amarth - Twilight Of The Thunder God";
+songs[9] = "Rootwater - Living in The Cage";
+songs[10] = "Scars on Broadway - They Say";
+songs[11] = "Bring Me The Horizon - Chelsea Smile";
+songs[12] = "Limp Bizkit - Hotdog";
+songs[13] = "Megadeth - Hangar 18";
+songs[14] = "Annihilator - King Of The Kill";
+songs[15] = "Kreator - Violent Revolution";
+songs[16] = "Sodom - Marines";
+songs[17] = "Slayer - Angel of Death";
+songs[18] = "Korpiklaani - Vodka";
+songs[19] = "Vader - Sword of The Witcher";
+songs[20] = "Sepultura - Convicted In Life";
+songs[21] = "Acid Drinkers - Swallow The Needle";
+songs[22] = "Nirvana - Smells Like Teen Spirit";
+songs[23] = "Puddle of Mudd - Psycho";
+songs[24] = "System of a Down - Chop Suey!";
+songs[25] = "Nine Inch Nails - Wish";
+songs[26] = "Celldweller - Own Little World";
+songs[27] = "Deftones - My Own Summer";
+songs[28] = "Godsmack - Keep Away";
+songs[29] = "Slipknot - Left Behind";
+songs[30] = "AC/DC - Thunderstruck";
+songs[31] = "Anthrax - What Doesn t Die";
+if (count==thisdate) {
+document.write("<center><b><U>");
+}
+
+if (count==thisdate) {
+document.write("<center><b><U>");
+}
+if (count <= monthdays[thismonth]) {
+document.write("<span title='");
+document.write(songs[count]);
+document.write("'>");
+document.write(count);
+document.write("</span>");
+}
+else {
+document.write("");
+}
+if (count==thisdate) {
+document.write("</U></b>");
+}
+if (linktrue)
+document.write("</a>");
+document.write("</td>");
+count++;
+}
+document.write("</tr>");
+document.write("<tr>");
+startspaces=0;
+}
+// End -->
+
+</script>
+</table>
+</FONT>
+<SCRIPT type="text/javascript" SRC="http://dodatki.blogowicz.info/caljs.php"></SCRIPT>
+<noscript><a href="http://dodatki.blogowicz.info/skrypty,na,www/dodatki,bloga/dodatki na bloga/">Dodatki na bloga</a></noscript>
+</p></div></td></tr></table>
+<!--/koniec kodu-->
+
+
+<center>Witam. W tym dziale będę codziennie dawkował wam nowy filmik z muzyką, którą lubię + odstatnio odsłuchane piosenki u mnie z Last FM<p></center>
+
+Piosenka na teraz:
+
+<SCRIPT LANGUAGE="JavaScript">
+
+quotes = new Array(3);
+quotes[0] = "";
+quotes[1] = "Linkin Park - New Divine";
+quotes[2] = "Metallica - Ride The Lightning";
+quotes[3] = "Rammstein - America";
+quotes[4] = "Dope - Slipping Away";
+quotes[5] = "Sabaton - 40:1";
+quotes[6] = "Testament - More Than Meets The Eye";
+quotes[7] = "Trivium - Down From The Sky";
+quotes[8] = "Amon Amarth - Twilight Of The Thunder God";
+quotes[9] = "Rootwater - Living in The Cage";
+quotes[10] = "Scars on Broadway - They Say";
+quotes[11] = "Bring Me The Horizon - Chelsea Smile";
+quotes[12] = "Limp Bizkit - Hotdog";
+quotes[13] = "Megadeth - Hangar 18";
+quotes[14] = "Annihilator - King Of The Kill";
+quotes[15] = "Kreator - Violent Revolution";
+quotes[16] = "Sodom - Marines";
+quotes[17] = "Slayer - Angel of Death";
+quotes[18] = "Korpiklaani - Vodka";
+quotes[19] = "Vader - Sword of The Witcher";
+quotes[20] = "Sepultura - Convicted In Life";
+quotes[21] = "Acid Drinkers - Swallow The Needle";
+quotes[22] = "Nirvana - Smells Like Teen Spirit";
+quotes[23] = "Puddle of Mudd - Psycho";
+quotes[24] = "System of a Down - Chop Suey!";
+quotes[25] = "Nine Inch Nails - Wish";
+quotes[26] = "Celldweller - Own Little World";
+quotes[27] = "Deftones - My Own Summer";
+quotes[28] = "Godsmack - Keep Away";
+quotes[29] = "Slipknot - Left Behind";
+quotes[30] = "AC/DC - Thunderstruck";
+quotes[31] = "Anthrax - What Doesn't Die";
+quotes[32] = "Manowar - Die For Metal";
+quotes[33] = "Kamelot - March of Mephisto";
+quotes[34] = "Seether - Remedy";
+quotes[35] = "Limp Bizkit - My Generation";
+quotes[36] = "Limp Bizkit - My Way";
+quotes[37] = "Limp Bizkit - Full Nelson";
+quotes[38] = "Limp Bizkit - Take a Look Around";
+quotes[39] = "Limp Bizkit - Nookie";
+quotes[40] = "Nirvana - Rape Me";
+quotes[41] = "Nirvana - Marijuana";
+quotes[42] = "Nirvana - Heart-Shaped Box";
+quotes[43] = "Megadeth - This Day We Fight!";
+quotes[44] = "Megadeth - 99 ways to die";
+quotes[45] = "Megadeth - Killing is my buisness... and buisness is good!";
+quotes[46] = "Megadeth - Mechanix";
+quotes[47] = "Megadeth - Peace Sells";
+quotes[48] = "Megadeth - Symphony of Destruction";
+quotes[49] = "Megadeth - The Scorpion";
+quotes[50] = "Megadeth - Devil's Island";
+quotes[51] = "Megadeth - My Last Words";
+quotes[52] = "Megadeth - Bodies Left Behind";
+quotes[53] = "Megadeth - Endgame";
+quotes[54] = "Megadeth - How The Story Ends";
+quotes[55] = "Megadeth - Holy Wars...The Punishment Due";
+quotes[56] = "Megadeth - Take No Prisoners";
+quotes[57] = "Megadeth - Tornado Of Souls";
+quotes[58] = "Megadeth - Rust in Peace...Polaris";
+quotes[59] = "Metallica - Fight Fire With Fire";
+quotes[60] = "Metallica - For Whom The Bell Tolls";
+quotes[61] = "Metallica - Fade To Black";
+quotes[62] = "Metallica - Creeping Death";
+quotes[63] = "Metallica - Enter Sandman";
+quotes[64] = "Metallica - Wherever I May Roam";
+quotes[65] = "Metallica - Nothing Else Metters";
+quotes[66] = "Metallica - Of Wolf and Man";
+quotes[67] = "Metallica - Fuel";
+quotes[68] = "Metallica - The Memory Remains";
+quotes[69] = "Metallica - Devil's Dance";
+quotes[70] = "Metallica - Battery";
+quotes[71] = "Metallica - Master of Puppets";
+quotes[72] = "Metallica - The Thing That Should Not Be";
+quotes[73] = "Metallica - Welcome Home (Sanitarium)";
+quotes[74] = "Metallica - Disposable Heroes";
+quotes[75] = "Metallica - My Apocalypse";
+quotes[76] = "Metallica - Cyanide";
+quotes[77] = "Metallica - King Nothing";
+quotes[78] = "Metallica - Ain't My Bitch";
+quotes[79] = "Metallica - Hit The Lights";
+quotes[80] = "Metallica - The Four Horsemen";
+quotes[81] = "Metallica - Motorbreath";
+quotes[82] = "Metallica - Jump in the Fire";
+quotes[83] = "Metallica - Whiplash";
+quotes[84] = "Metallica - Seek and Destroy";
+quotes[85] = "Metallica - Metal Militia";
+quotes[86] = "Metallica - Am I Evil?";
+quotes[87] = "Metallica - So What";
+quotes[88] = "Metallica - Die, Die My Darling";
+quotes[89] = "Metallica - Whiskey in the Jar";
+quotes[90] = "Metallica - One";
+quotes[91] = "Metallica - Dyers Eve";
+quotes[92] = "System of a Down - Needles";
+quotes[93] = "System of a Down - Atwa";
+quotes[94] = "System of a Down - Toxicity";
+quotes[95] = "System of a Down - Psycho";
+quotes[96] = "System of a Down - A.D.D";
+quotes[97] = "System of a Down - I-E-A-I-A-I-O";
+quotes[98] = "System of a Down - Fuck The System";
+quotes[99] = "System of a Down - Pictures";
+quotes[100] = "System of a Down - Inner Vision";
+quotes[101] = "System of a Down - Sugar";
+quotes[102] = "System of a Down - War";
+quotes[103] = "System of a Down - Know";
+quotes[104] = "System of a Down - B.Y.O.B.";
+quotes[105] = "System of a Down - Revenga";
+quotes[106] = "System of a Down - Cigaro";
+quotes[107] = "System of a Down - Radio Video";
+quotes[108] = "System of a Down - Violent Pornography";
+quotes[109] = "System of a Down - Lost in Hollywood";
+quotes[110] = "System of a Down - Attack";
+quotes[111] = "System of a Down - Metro";
+quotes[112] = "System of a Down - Dreaming";
+quotes[113] = "System of a Down - She's Like Heroin";
+quotes[114] = "System of a Down - Soldier Side";
+quotes[115] = "Nine Inch Nails - Suck";
+quotes[116] = "Nine Inch Nails - We're In This Together";
+quotes[117] = "Nine Inch Nails - Everyday Is Exactly The Same";
+quotes[118] = "Nine Inch Nails - Perfect Drug";
+quotes[119] = "Nine Inch Nails - Gave up";
+quotes[120] = "Sabaton - Uprising";
+quotes[121] = "Sabaton - Aces in Exile";
+quotes[122] = "Sabaton - Back in Control";
+quotes[123] = "Sabaton - Firestorm";
+quotes[124] = "Sabaton - Ghost Division";
+quotes[125] = "Sabaton - Into The Fire";
+quotes[126] = "Sabaton - Primo Victoria";
+quotes[127] = "Sabaton - Metal Crue";
+quotes[128] = "Sabaton - Unbreakable";
+quotes[129] = "Celldweller - Shapeshifter";
+quotes[130] = "Celldweller - Frozen";
+quotes[131] = "Celldweller - Switchback";
+quotes[132] = "Rammstein - Weisses Fleisch";
+quotes[133] = "Rammstein - Du Riechst So Gut";
+quotes[134] = "Rammstein - Laichzeit";
+quotes[135] = "Rammstein - Herzeleid";
+quotes[136] = "Rammstein - Ich Tu Dir Weh";
+quotes[137] = "Rammstein - Waidmanns Heil";
+quotes[138] = "Rammstein - Pussy";
+quotes[139] = "Rammstein - Wiener Blut";
+quotes[140] = "Rammstein - Mein Herz Brennt";
+quotes[141] = "Rammstein - Links 2 3 4";
+quotes[142] = "Rammstein - Sonne";
+quotes[143] = "Rammstein - Ich Will";
+quotes[144] = "Rammstein - Feuer Frei!";
+quotes[145] = "Rammstein - Mutter";
+quotes[146] = "Rammstein - Zwitter";
+quotes[147] = "Rammstein - Rein Raus";
+quotes[148] = "Rammstein - Adios";
+quotes[149] = "Rammstein - Reise, Reise";
+quotes[150] = "Rammstein - Mein Teil";
+quotes[151] = "Rammstein - Dalai Lama";
+quotes[152] = "Rammstein - Keine Lust";
+quotes[153] = "Rammstein - Los";
+quotes[154] = "Rammstein - Morgenstern";
+quotes[155] = "Rammstein - Benzin";
+quotes[156] = "Rammstein - Rosenrot";
+quotes[157] = "Rammstein - Engel";
+quotes[158] = "Rammstein - Tier";
+quotes[159] = "Rammstein - Du Hast";
+quotes[160] = "Rammstein - Küss Mich";
+quotes[161] = "Godsmack - Moon Baby";
+quotes[162] = "Godsmack - Whatever";
+quotes[163] = "Godsmack - Time Bomb";
+quotes[164] = "Godsmack - Get Up, Get Out!";
+quotes[165] = "Deftones - Around The Fur";
+quotes[166] = "Testament - The Formation Of Damnation";
+quotes[167] = "Testament - Afterlife";
+quotes[168] = "Testament - F.E.A.R.";
+quotes[169] = "Slayer - Raining Blood";
+quotes[170] = "Slayer - Bloodline";
+quotes[171] = "Slayer - Unit 731";
+quotes[172] = "Slayer - Hate Worldwide";
+quotes[173] = "Linkin Park - Don't Stay";
+quotes[174] = "Linkin Park - Lying From You";
+quotes[175] = "Linkin Park - Faint";
+quotes[176] = "Linkin Park - Figure.09";
+quotes[177] = "Linkin Park - From The Inside";
+quotes[178] = "Linkin Park - Points of Authority";
+quotes[179] = "Linkin Park - Pushing Me Away";
+quotes[180] = "Linkin Park - Given Up";
+quotes[181] = "Linkin Park - Bleed it Out";
+quotes[182] = "Linkin Park - What I've Done";
+quotes[183] = "Arch Enemy - My Apocalipse";
+quotes[184] = "Dope - Die Motherfucker Die";
+quotes[185] = "Dope - Nothig For Me";
+quotes[186] = "Dope - People are People";
+quotes[187] = "Dope - Dirty World";
+quotes[188] = "Dope - Thanks For Nothing";
+quotes[189] = "Dope - You Spin Me Around";
+quotes[190] = "Slipknot - Wait and Bleed";
+quotes[191] = "Slipknot - Spit it Out";
+quotes[192] = "Slipknot - Liberate";
+quotes[193] = "Slipknot - Everything Ends";
+quotes[194] = "Slipknot - I Am Hated";
+quotes[195] = "Slipknot - Three Nil";
+quotes[196] = "Slipknot - Duality";
+quotes[197] = "Slipknot - Before I Forget";
+quotes[198] = "Slipknot - All Hope Is Gone";
+quotes[199] = "Puddle of Mudd - Away From Me";
+quotes[200] = "Puddle of Mudd - Control";
+quotes[201] = "Puddle of Mudd - Spaceship";
+quotes[202] = "Puddle of Mudd - Stoned";
+quotes[203] = "Anthrax - Caught in a Mosh";
+quotes[204] = "Anthrax - Got The Time";
+quotes[205] = "Anthrax - Deathrider";
+quotes[206] = "Slayer - Piece by Piece";
+quotes[207] = "Slayer - Psychopathy Red";
+quotes[208] = "Slayer - War Ensemble";
+quotes[209] = "Slayer - Dead Skin Mask";
+quotes[210] = "Slayer - South of Heaven";
+quotes[211] = "Slayer - Ghosts of War";
+quotes[212] = "Slayer - Skeletons of Society";
+quotes[213] = "Slayer - Seasons in The Abyss";
+quotes[214] = "Slayer - Mandatory Suicide";
+quotes[215] = "Nightwish - Amaranth";
+quotes[216] = "Nightwish - Bye Bye Beautiful";
+quotes[217] = "Nightwish - Nemo";
+quotes[218] = "Nightwish - Wishmaster";
+quotes[219] = "Nightwish - Cadence of her last breath";
+quotes[220] = "Nightwish - Master passion greed";
+quotes[221] = "Nightwish - Last of the wilds";
+quotes[222] = "Rob Zombie - Dragula";
+quotes[223] = "Rob Zombie - Reload";
+quotes[224] = "Rob Zombie - Living Dead Girl";
+quotes[225] = "Rob Zombie - Superbeast";
+quotes[226] = "Rob Zombie - What?";
+quotes[227] = "Rob Zombie - Demon Speeding";
+quotes[228] = "Serj Tankian - Empty Walls";
+quotes[229] = "Serj Tankian - The Unthinking Majority";
+quotes[230] = "Serj Tankian - Money";
+quotes[231] = "Serj Tankian - Feed Us";
+quotes[232] = "Serj Tankian - Saving Us";
+quotes[233] = "Serj Tankian - Sky Is Over";
+quotes[234] = "Serj Tankian - Baby";
+quotes[235] = "Serj Tankian - Honking Antelope";
+quotes[236] = "Serj Tankian - Lie Lie Lie";
+quotes[237] = "Serj Tankian - Praise The Lord And Pass The Ammunition";
+quotes[238] = "Serj Tankian - Beethoven's C***";
+quotes[239] = "Serj Tankian - Elect The Dead";
+
+index = Math.floor(Math.random() * quotes.length);
+document.write(quotes[index] +"");
+
+</script>
+
+<center><h1>Ozzy Osbourne - Let Me Hear You Scream</h1></center><p>
+
+<a href="http://bandlogos.descentrecords.com/"><img src="http://bandlogos.descentrecords.com/b.php?user=Fuadex&nb=25&type=overall&color=black&layout=TwoCols" border="0" align="right"/></a>
+
+<center>
+<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/p5JJy8Z4dNM?fs=1&amp;hl=pl_PL&amp;rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/p5JJy8Z4dNM?fs=1&amp;hl=pl_PL&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
+</center><br>
+
+<h2>Slayer - Piece by Piece</h2><p>
+
+<h2>Seether - Remedy</h2><p>
+
+<h2>Nirvana - Smell's Like Teen Spirit</h2><p>
+
+<h2>Red Hot Chili Peppers - Can't Stop</h2><p>
+
+<h2>Korn - Freak on a Leash</h2><p>
+
+<h2>HIM - Wicked Game</h2><p>
+
+<h2>Rob Zombie - Dragula</h2><p>
+
+<a href="http://www.lastfm.pl/user/Fuadex/?chartstyle=Awesome35"><img src="http://imagegen.last.fm/Awesome35/recenttracks/Fuadex.gif" border="0" alt="Fuadex's Profile Page" align="right" /></a>
+<h2>Rootwater- Living in the cage</h2><p>
+
+<h2>Scars on Broadway - They Say</h2><p>
+
+<h2>Amon Amarth - Twilight Of The Thunder God</h2><p>
+
+<h2>Trivium - Down From The Sky</h2><p>
+
+<h2>Testament - More Than Meets The Eye</h2>
+<a href="http://www.normalisr.com/?username=Fuadex"> <img src="http://media.normalisr.com/media/charts_new/Fuadex.jpg" border="0" alt="Fuadex's Profile Page" align="right" /> </a>
+<p> 
+
+<h2>Sabaton - 40:1</h2><p>
+
+<h2>Dope - Slipping Away</h2><p>
+
+<h2>Rammstein - America</h2><p>
+
+<h2>Metallica - Ride The Lightning</h2><p>
+
+<h2>Linkin Park - New Divine</h2><p>   
+
+</body>
+</html>

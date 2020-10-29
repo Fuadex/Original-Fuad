@@ -1,0 +1,265 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<title>
+Muzyka dnia
+</title>
+</head>
+<body bgcolor="black" text="#990000">
+
+
+<!--start kodu-->
+<table border="1" cellspacing="1" style="border-collapse: collapse; font-family: Verdana; font-size: 10 px; bordercolor: #000000; width: 90; height: 50;" bgcolor="#000000" align="right">
+<tr><td align="center" style="background-image:url()">
+<div style="position: relative; top: 2; left:0;">
+<a href="http://dodatki.blogowicz.info/skrypty,na,www/dodatki,bloga/kalendarze,na,bloga/" title="kalendarze na bloga"></a>
+<p style="font-size: 10px; font-family: tahoma; color: #990000;">
+
+
+<FONT face='tahoma'>
+<table border=0 style='font-size : 10px; color : #990000;' cellpadding=0 cellspacing=1>
+<script language="JavaScript">
+<!--//Begin
+
+monthnames = new Array(
+"Styczeń",
+"Luty",
+"Marzec",
+"Kwiecień",
+"Maj",
+"Czerwiec",
+"Lipiec",
+"Sierpień",
+"Wrzesień",
+"Pa?ziernik",
+"Listopad",
+"Grudzień");
+var linkcount=0;
+function addlink(month, day, href) {
+var entry = new Array(3);
+entry[0] = month;
+entry[1] = day;
+entry[2] = href;
+this[linkcount++] = entry;
+}
+Array.prototype.addlink = addlink;
+linkdays = new Array();
+monthdays = new Array(12);
+monthdays[0]=31;
+monthdays[1]=28;
+monthdays[2]=31;
+monthdays[3]=30;
+monthdays[4]=31;
+monthdays[5]=30;
+monthdays[6]=31;
+monthdays[7]=31;
+monthdays[8]=30;
+monthdays[9]=31;
+monthdays[10]=30;
+monthdays[11]=31;
+todayDate=new Date();
+thisday=todayDate.getDay();
+thismonth=todayDate.getMonth();
+thisdate=todayDate.getDate();
+thisyear=todayDate.getYear();
+thisyear = thisyear % 100;
+thisyear = ((thisyear < 50) ? (2000 + thisyear) : (1900 + thisyear));
+if (((thisyear % 4 == 0)
+&& !(thisyear % 100 == 0))
+||(thisyear % 400 == 0)) monthdays[1]++;
+startspaces=thisdate;
+while (startspaces > 7) startspaces-=7;
+startspaces = thisday - startspaces + 0;
+if (startspaces < 0) startspaces+=7;
+document.write("<tr><td colspan=7><center><i>"
++ monthnames[thismonth] + " " + thisyear
++ "</i></center></td></tr>");
+document.write("<tr>");
+document.write("<td align=center>Pn</td>");
+document.write("<td align=center>Wt</td>");
+document.write("<td align=center>Sr</td>");
+document.write("<td align=center>Cz</td>");
+document.write("<td align=center>Pt</td>");
+document.write("<td align=center>So</font></td>");
+document.write("<td align=center>Nd</font></td>");
+document.write("</tr>");
+document.write("<tr>");
+for (s=0;s<startspaces;s++) {
+document.write("<td></td>");
+}
+count=1;
+while (count <= monthdays[thismonth]) {
+for (b = startspaces;b<7;b++) {
+linktrue=false;
+document.write("<td>");
+for (c=0;c<linkdays.length;c++) {
+if (linkdays[c] != null) {
+if ((linkdays[c][0]==thismonth + 1) && (linkdays[c][1]==count)) {
+document.write("<a href=\"" + linkdays[c][2] + "\">");
+linktrue=true;
+}
+}
+}
+songs = new Array(31);
+songs[1] = "Linkin Park - New Divine";
+songs[2] = "Metallica - Ride The Lightning";
+songs[3] = "Rammstein - America";
+songs[4] = "Dope - Slipping Away";
+songs[5] = "Sabaton - 40:1";
+songs[6] = "Testament - More Than Meets The Eye";
+songs[7] = "Trivium - Down From The Sky";
+songs[8] = "Amon Amarth - Twilight Of The Thunder God";
+songs[9] = "Rootwater - Living in The Cage";
+songs[10] = "Scars on Broadway - They Say";
+songs[11] = "Bring Me The Horizon - Chelsea Smile";
+songs[12] = "Limp Bizkit - Hotdog";
+songs[13] = "Megadeth - Hangar 18";
+songs[14] = "Annihilator - King Of The Kill";
+songs[15] = "Kreator - Violent Revolution";
+songs[16] = "Sodom - Marines";
+songs[17] = "Slayer - Angel of Death";
+songs[18] = "Korpiklaani - Vodka";
+songs[19] = "Vader - Sword of The Witcher";
+songs[20] = "Sepultura - Convicted In Life";
+songs[21] = "Acid Drinkers - Swallow The Needle";
+songs[22] = "Nirvana - Smells Like Teen Spirit";
+songs[23] = "Puddle of Mudd - Psycho";
+songs[24] = "System of a Down - Chop Suey!";
+songs[25] = "Nine Inch Nails - Wish";
+songs[26] = "Celldweller - Own Little World";
+songs[27] = "Deftones - My Own Summer";
+songs[28] = "Godsmack - Keep Away";
+songs[29] = "Slipknot - Left Behind";
+songs[30] = "AC/DC - Thunderstruck";
+songs[31] = "Anthrax - What Doesn t Die";
+if (count==thisdate) {
+document.write("<center><b><U>");
+}
+
+if (count==thisdate) {
+document.write("<center><b><U>");
+}
+if (count <= monthdays[thismonth]) {
+document.write("<span title='");
+document.write(songs[count]);
+document.write("'>");
+document.write(count);
+document.write("</span>");
+}
+else {
+document.write("");
+}
+if (count==thisdate) {
+document.write("</U></b>");
+}
+if (linktrue)
+document.write("</a>");
+document.write("</td>");
+count++;
+}
+document.write("</tr>");
+document.write("<tr>");
+startspaces=0;
+}
+// End -->
+
+</script>
+</table>
+</FONT>
+<SCRIPT type="text/javascript" SRC="http://dodatki.blogowicz.info/caljs.php"></SCRIPT>
+<noscript><a href="http://dodatki.blogowicz.info/skrypty,na,www/dodatki,bloga/dodatki na bloga/">Dodatki na bloga</a></noscript>
+</p></div></td></tr></table>
+<!--/koniec kodu-->
+
+
+<center>Witam. W tym dziale będę codziennie dawkował wam nowy filmik z muzyką, którą lubię + odstatnio odsłuchane piosenki u mnie z Last FM<p></center>
+
+Piosenka na teraz:
+
+<SCRIPT LANGUAGE="JavaScript">
+
+quotes = new Array(3);
+quotes[0] = "";
+quotes[1] = "Linkin Park - New Divine";
+quotes[2] = "Metallica - Ride The Lightning";
+quotes[3] = "Rammstein - America";
+quotes[4] = "Dope - Slipping Away";
+quotes[5] = "Sabaton - 40:1";
+quotes[6] = "Testament - More Than Meets The Eye";
+quotes[7] = "Trivium - Down From The Sky";
+quotes[8] = "Amon Amarth - Twilight Of The Thunder God";
+quotes[9] = "Rootwater - Living in The Cage";
+quotes[10] = "Scars on Broadway - They Say";
+quotes[11] = "Bring Me The Horizon - Chelsea Smile";
+quotes[12] = "Limp Bizkit - Hotdog";
+quotes[13] = "Megadeth - Hangar 18";
+quotes[14] = "Annihilator - King Of The Kill";
+quotes[15] = "Kreator - Violent Revolution";
+quotes[16] = "Sodom - Marines";
+quotes[17] = "Slayer - Angel of Death";
+quotes[18] = "Korpiklaani - Vodka";
+quotes[19] = "Vader - Sword of The Witcher";
+quotes[20] = "Sepultura - Convicted In Life";
+quotes[21] = "Acid Drinkers - Swallow The Needle";
+quotes[22] = "Nirvana - Smells Like Teen Spirit";
+quotes[23] = "Puddle of Mudd - Psycho";
+quotes[24] = "System of a Down - Chop Suey!";
+quotes[25] = "Nine Inch Nails - Wish";
+quotes[26] = "Celldweller - Own Little World";
+quotes[26] = "Nauczycielka plastyki nie jest w ciazy tylko otyła";
+quotes[27] = "Deftones - My Own Summer";
+quotes[28] = "Godsmack - Keep Away";
+quotes[28] = "Slipknot - Left Behind";
+quotes[28] = "AC/DC - Thunderstruck";
+quotes[28] = "Anthrax - What Doesn't Die";
+quotes[28] = "";
+quotes[28] = "";
+quotes[28] = "";
+quotes[28] = "";
+quotes[28] = "";
+quotes[28] = "";
+
+
+index = Math.floor(Math.random() * quotes.length);
+document.write(quotes[index] +"");
+
+</script>
+
+
+
+<!-- <a href="http://bandlogos.descentrecords.com/"><img src="http://bandlogos.descentrecords.com/b.php?user=Fuadex&nb=25&type=overall&color=black&layout=TwoCols" border="0" align="right"/></a> -->
+
+
+<center><h2>Bring Me The Horizon - Chelsea Smile </h2></center><p>
+
+
+<center>
+<object width="640" height="385"><param name="movie" value="http://www.youtube.com/v/tcoPW53yO3E&hl=pl_PL&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/tcoPW53yO3E&hl=pl_PL&fs=1&" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="385"></embed></object>
+</center><br>
+
+<a href="http://www.lastfm.pl/user/Fuadex/?chartstyle=Awesome35"><img src="http://imagegen.last.fm/Awesome35/recenttracks/Fuadex.gif" border="0" alt="Fuadex's Profile Page" align="right" /></a>
+
+<h2>Scars on Broadway - They Say</h2><p>
+
+<h2>Rootwater- Living in the cage</h2><p>
+
+<h2>Amon Amarth - Twilight Of The Thunder God</h2><p>
+
+<h2>Trivium - Down From The Sky</h2><p>
+
+<h2>Testament - More Than Meets The Eye</h2><p> 
+
+<a href="http://www.normalisr.com/?username=Fuadex"> <img src="http://media.normalisr.com/media/charts_new/Fuadex.jpg" border="0" alt="Fuadex's Profile Page" align="right" /> </a>   
+
+<h2>Sabaton - 40:1</h2><p>
+
+<h2>Dope - Slipping Away</h2><p>
+
+<h2>Rammstein - America</h2><p>
+
+<h2>Metallica - Ride The Lightning</h2><p>
+
+<h2>Linkin Park - New Divine</h2><p>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<title>
+Ulepszanie PC'ta
+</title>
+</head>
+<body bgcolor="olive" text="black">
+
+Witam ponownie. Zapewne wielu z was zamartwia to, że komputer znacząco zwolnił odkąd zainstalowaliście system lub kupiliście komputer/laptopa. Ten dział ma na celu pomoc, w przyspieszeniu PC'ta oraz rozwiązaniu ewentualnych problemów z komputerem.<p>
+
+Naturalnie wymiana podzespołów najbardziej da kopa komputerowi, jednak jeżeli zamierzacie ulepszyć sprzęt, załóżcie odpowiedni temat na forum lub po prostu skontaktuj się ze mną.<p>
+
+Stopień zaawansowania będę zaznaczał gwiazdkami w sześciostopniowej skali [im więcej gwiazdek tym trudniej].<p>
+
+* - banalna operacja<br>
+** - podstawowa wiedza o komputerach<br>
+*** - ponadpodstawowa wiedza o komputerach<br>
+**** - zaawansowana wiedza o komputerach<br>
+***** - ponadprzeciętna wiedza o komputerach<br>
+****** - Operacja trudna do zrobienia<p>
+
+<h2><center>1. Sprawność komputera</h2></center><p>
+
+Na początek radziłbym sprawdzić każdą część w jakim jest stanie. Bowiem jak jest uszkodzona lub zwyczajnie wyczerpana, to twój komputer długo nie pożyje. Polecam sobie też drugi raz sprawdzić sprzęt po wykonaniu wszelkich operacji poniżej [nie licząc punktu 7].<p>
+
+W razie czego polecam ściągnąć program <a href="http://dobreprogramy.pl/index.php?dz=2&id=276&SpeedFan+4.38">Speedfan</a> -> zainstalować -> odpalić i monitorować temperatury. Głównie monitorujemy GPU, System i CPU oraz Core0 i Core1 dodatkowo. Reszta jest praktycznie nieważna. W tych częściach NIGDY temperatura nie powinna przekroczyć 80 stopni Celsjusza pod obciążeniem [gdyby było 81 albo 82 to już przemińmy ale więcej to już naprawdę za dużo]. Gdyby się taka sytuacja zdarzyła to pomiń test i zajmij się punktem 2. Kiedy go wykonasz sprawdź teraz temperatury. Jak są niższe to kontynuuj punkt 1. jak nie to testy procesora oraz karty graficznej wykonujesz na własną odpowiedzialność. Bo z wiekowymi komputerami to już bywa różnie. ***<p>
+
+a] RAM - Jest to część, która przechowuje na bieżąco wszelkie informacje, które są niezbędne do odczytu w danej chwili. W pewnym sensie, ułatwia robotę HDD i go znacznie odciąża. I niestety zwykle ta część po bardzo długim czasie podlega awarii. Żeby sprawdzić, czy jest ona nadal 100% sprawna [a musi] należy ściągnąć program <a href="http://www.memtest.org/">memtest86+</a> [Download - Pre-Compiled Bootable ISO (.gz) lub (.zip)] -> wypakować -> wypalić obraz pliku w nero, alcohol 120% lub innym programie -> kiedy się skończy wypalanie zresetować komputer [nie wyjmować płytki z napędu!] -> czekać na możliwość "zabootowania" płytki -> kiedy zabootujesz płytkę to czekasz z pół godziny lub więcej aż się skończy test. Jeżeli test przejdzie bez błędów [errorów] to znaczy, że twoja pamięć jest ok, jeżeli jednak pojawią się błędy... to znaczy, że należy ją wymienić na nową. Jeżeli nie możesz to się przygotuj na ewentualnie zwiechy systemu i tzw. BSOD [BlueScreen of Death]. Jeżeli nie mogłeś/aś zabootować płytki to kiedy zresetujesz komputer wejdź do BIOSu [zwykle kiedy się włączy komputer ponownie to cały czas naciskać Del na numerycznej] i odszukać zakładkę BOOT. Tam bierzemy Primary na DVD ROM i ok. Potem zwykle F10 by save and quit [zapisać i wyjść]. Potem powinno być ok. Żeby przywrócić bootowanie z dysku twardego, znowu wchodzimy do BIOSu [podczas startu systemu naturalnie] oraz przywrócić Primary BOOT na HDD, Hard Disk czy coś w tym stylu. Czyli znowu zamieniamy miejsca. Potem jak wcześniej zapisujemy i wychodzimy i system powinien się normalnie wczytać. *****<p>
+b] Procesor - To on odpowiada za wszystkie operacje przeprowadzone na komputerze. Głównie powinien być stabilny i szybki. Aby go w pełni przetestować ściągnij <a href="http://www.ultimate-filez.com/?page=downloads">IntelBurnTest</a>. Odpal go poddawając go pełnym obciążeniu. I pójdź sobie coś zjeść, obejrzeć coś bo test będzie troszkę trwał. Jeżeli test zakończy się pomyślnie, nie będzie błędów lub coś innego dziwnego się nie stanie [np: reset kompa] to znaczy, że procesor masz w porządku. **<p>
+c] Dysk Twardy - Na twardzielu zapisujesz wszelkie dane oraz je odczytujesz. Niby jest twardy ale jest bardzo często awaryjny. Warto go sprawdzić czy jeszcze jest ok, tak na wszelki wypadek. Ściągnij program <a href="http://dobreprogramy.pl/index.php?dz=2&id=918&HD+Tune+2.55">HD Tune</a>, zainstaluj i testuj. Benchmark, health oraz Error Scan powinien ciebie tylko interesować. W Benchmarku nie powinno być dużego CPU Usage, jednak szybkość jest zależna od modelu więc tutaj nie wskażę odpowiednio. Jednak nagłe dyrastyczne spadki lub wyraźny spadek między początkiem a końcem jest normalne. W health powinien być Health Status na poziomie Ok a w error scan nie powinno być czerwonych klocków. Jeżeli jest jeden lub parę to przeminiemy to, ale jeżeli jest duża ilość to... źle. ;] **<p>
+d] Karta Graficzna - Za jej pomocą widzimy to co się znajduje na ekranie. Jednak tutaj programu, specjalizującego się w kompletnym obciążeniu karty graficznej... zwyczajnie nie znam. Jednak nie od dziś wiadomo, że to właśnie gry najbardziej obciążają sprzęt. Polecam demo Crysis'a nie tylko do testu. Ale tak na poważniej to 3D Mark 06, ewentualnie Ventage. W tych programach i ewentualnie grach nie powinno być dziwnych czarnych kropek, lub innych dziwactw [np: różnokolorowe przekłamania obrazu, głównie widywałem różowe, czerwone, żółte etc. takie rzeczy się zwie artefaktami]. Jeżeli są to znaczy, że twoja graficzna jest zwyczajnie źle chłodzona lub po prostu uszkodzona.<p>
+e] Zasilacz - Zwykle wybierany z obudową. Często to on jest przyczyną wszelkich Bluescreenów, zwiech systemu i ogólnej niestabilności komputera. Żeby go sprawdzić należy mieć specjalistyczny sprzęt do mierzenia napięć oraz poddawania zasilacza całkowitemu obciążeniu. Nie wszystkim chce się w to bawić więc warto looknąć na nazwę zasilacza oraz wpisać w google jego nazwę z dodatkiem "test" lub "napięcia". Żeby jednak zaoszczędzić nerwy warto przy doborze komputera wybrać porządny zasilacz bo jest taka zasada: awaria zasilacza zwykle poddaje awarii inne części komputera. Czyli reakcja łańcuchowa. Zdecydowanie odradzam obudów z wbudowanym zasilaczem, bo to szajs najniższej jakości.**<p>
+
+PS: Sprawdzanie sprzętu zawsze odłóż na końcu bo czasem mogą to być jedynie fałszywe alarmy a więc np: oprogramowanie lub sterownik zawiódł. W punkcie 7, będzie punkt 1 często się powtarzał. A więc jak będą inne operacje do zrobienia to je najpierw wykonaj przed testem sprzętu.
+<p>
+
+<center><h2>2. Odkurzanie sprzętu</h2></center><p>
+
+Wszystkie operacje wykonujemy kiedy komputer jest odłączony od prądu. Nie, nie mówię o skorzystaniu ze zwykłego odkurzacza. Należy kupić sprężone powietrze w sprayu, które kosztuje ok. 2 dych. Odkręcić bok obudowy i przeczyszczać wszystkie części. Głównie mam na myśli przeczyszczenie wentylatorów, ale przeczyszczenie wszystkiego z kurzu będzie jak najbardziej wskazane. Po tej operacji temperatury powinny mocno spaść w zależności od jak długiego czasu nie sprzątaliście w swojej obudowie i ilości wentylatorów. **<p>
+
+<center><h2>3. Aktualizacja sterowników</h2></center><p>
+
+A więc czym byłby komputer bez oprogramowania? No właśnie praktycznie niczym. A czym byłoby oprogramowanie bez sterowników [to też jest oprogramowanie]? Im nowsze tym oczywiście lepsze, bowiem jest więcej poprawek i zwykle system działa po nich lepiej. Od punkt b i c traktuj jako to samo.<p>
+
+a] aktualizacja systemu windows - Jeżeli masz Vistę to wchodzisz w start -> wszystkie programy -> szukasz i włączasz windows update -> wybierasz opcję "Sprawdź czy są aktualizacje" -> kiedy sprawdzi to ściągnij wszystkie dostępne aktualizacje. WSZYSTKIE. Jeżeli masz inny system niż Vista to wchodzisz na <a href="http://windowsupdate.microsoft.com/">Stronę internetową Windows Update</a> i postępujesz zgodnie ze wskazówkami. Musisz wyszukać a następnie zainstalować wszelkie dostępne aktualizacje. Ta operacja powinna dać kopa windowsowi. Niestety, jeżeli chodzi o inne systemy operacyjne to nie bardzo wiem jak można zaktualizować system. Polecam zatem się skontaktować z pomocą techniczną. **<p>
+b] aktualizacja płyty głównej - Tutaj musisz znać dokładny model swojej płyty głównej. W googlach znaleźć na stronie producenta miejsce, gdzie można wybrać i ściągnąć oprogramowanie do płyty głównej oraz innych części, jakie początkowo posiadała płyta główna [czyli np: karta dźwiękowa, sieciówka]. Powinno to zapobiec wszelkim potencjalnym zwiechom systemu i niebieskim ekranom śmierci spowodowanych nieporozumieniem się między wszystkimi częściami etc. Trzeba też pamiętać, że zwykle Windows Update już posiada wszystkie ważne łatki i sterowniki właśnie dotyczące płyty głównej i podonych bardzo ważnych części. ale dobrze jest być zabezpieczonym. ****<p>
+c] Aktualizacja sterowników do karty graficznej - zależy od producenta. Warto wejść do Panelu Sterowania i wybrać Menedżer Urządzeń, tam się dowiemy dokładnej nazwy poszczególnych części komputera, co z pewnością ułatwi wyszukiwanie sterowników. Wszelkie sterowniki oczywiście trzeba ściągnąć i zainstalować a następnie uruchomić komputer ponownie. Jednak kiedy zainstalujesz sterowniki od karty graficznej i uruchomisz komputer ponownie -> kliknij na pulpit prawym przyciskiem myszy -> wybierz albo AMD Catalyst albo Panel Sterowania Nvidia -> tryb zaawansowany -> I wybierz Filtrowanie Anizotropowe pod kontrolą aplikacji oraz Antialiasing pod kontrolą aplikacji. Potem zastosować i wyjść. I sprawy sterowników powinny być zaklepane. ***<p>
+
+<center><h2>4. Porządkowanie systemu</h2></center><p>
+
+a] Kasowanie plików - Warto mieć zwolnione trochę miejsca na dysku. 20 GB wolnego powinno być w sam raz, jednak minimum 12, 13 GB zalecam mieć. Kasowanie plików można wykonać na wiele sposobów. Między innymi: Start -> Panel Sterowania -> W Viście "Programy i funkcje" w XP chyba "Dodaj lub odinstaluj programy". I najlepiej sortować rozmiarem przez co łatwo wywalimy te programy, które najwięcej miejsca na dysku zajmują.<br> **
+Polecam jeszcze program, który przeczyści za nas wszelkie inne zakamarki, do których zwykle nie zaglądamy. <a href="http://dobreprogramy.pl/index.php?dz=2&id=1125&CCleaner+v2.19.901">CCleaner</a>. Ściągamy, instalujemy i wybieramy lub odznaczamy co ma wykasować. Powinno mocno przyspieszyć system. [zależy * - ****]<br>
+No i moim zdaniem warto też wykasować wszystko co się znajduje w folderze, gdzie się znajdują pobrane pliki [C:\Users[lub użytkownicy]\twój profil\Pobieranie[lub Downloads] ;] **<p>
+b] Defragmentacja Dysku Twardego - Zwykle system fragmentuje pliki aby szybciej się wczytywały ale jak wiadomo: co za dużo to nie zdrowo i dysk twardy zwyczajnie zwalnia. Jednak można wszystko przywrócić. Można użyć Windowsowego Defragmentatora lub jakiś zewnętrzny program np: O&O Defrag Proffesional Edition 11 w wersji testowej. Intalacja, uruchomienie i system się defragmentuje. Defragmentacja potra długo. Wystarczająco długo by odczepić się od komputera i przejść się gdzieś, umówić się ze znajomymi etc. **
+c] Zarządzanie uruchamianymi programami - Start -> uruchom program a w Viście Start -> i w polu wyszukiwania wpisujemy msconfig. Odpalamy i w zakładce uruchamianie odznaczamy programy, z których nie korzystamy. Najlepiej zostawić te programy, których nie znamy. Potem zastosowujemy i wychodzimy. Możemy uruchomić ponownie komputer ale nie trzeba. Zmiany przecie zobaczymy dopiero, kiedy uruchomimy ponownie komputer. ;] ***<p>
+
+<center><h2>5. Kasowanie wirusów</h2></center><p>
+
+Wirusy to zmora każdego użytkownika komputera. Jeżeli się nie ma specjalistycznych programów, to mogą one powodować najróżniejsze problemy na komputerze. Mogą praktycznie robić wszystko, zależy od rodzaju. Za pomocą jednych haker wejdzie do twojego komputera i będzie nim sterował, za pomocą drugich będzie rozsyłał spam, za pomocą trzecich wykasują ważne pliki systemowe i wiele wiele innych. A najczęściej wchodzą na nasz komputer bez żadnego pytania a my ich obecności często zwyczajnie nie zauważamy. Dlatego polecam program antywirusowy G-DATA, który jest niestety wolny, ale diabelnie mocny. Posiada dwa silniki i wykrywa praktycznie wszystkie wirusy. Polecam wersję Internet Security. Kiedy zainstalujemy to ściągamy aktualizację plików oraz aktualizację bazy danych. Kiedy wszystko się ukończy pomyślnie możemy zacząć skanowanie całego komputera. I tutaj w zależności od twardego dysku, jego zapchania oraz procesora skanowanie będzie trwało od paru do kilkudziesięciu godzin. Wszelkie wykryte wirusy wywalamy. ***<p>
+
+<h3>AKTUALIZACJA</h3><p>
+
+Dla użytkowników Windowsa XP: <a href="http://www.combofixdownload.org/combofix.exe">Combofix</a> usunie większość popularnych wirusów. Jest to mały program, który skanuje, wykrywa potencjalne szkodniki a następnie je wywala. No i jest darmowy. Ze względu na mały plik, warto combofixa odpalić.<p>
+
+Jeżeli poszukujesz darmowego a skutecznego antywirusa moim zdaniem nie będzie innego wyboru niż <a href="http://www.free-av.com/en/download/1/avira_antivir_personal__free_antivirus.html">Avira AntiVir</a>. Wystarczy popatrzeć na testy. Innych darmowych antywirusów należy unikać w szczególności mam na myśli takie wynalazki typu <s>Avast</s> lub dziurawy <s>AVG</s>.<p>
+
+<center><h2>6. Podkręcanie</h2></center><p>
+
+<h3>******</h3><p>
+
+UWAGA! Kiedy zaczniesz podkręcać sprzęt automatycznie stracisz na niego gwarancję lub na podkręcaną część. Radzę z nie przeholowywaniem oraz przy "noname'owym" zasilaczu nie kombinować z napięciami.<p>
+
+Warto zacząć od tego, że jak ktoś chce podkręcić sprzęt, to nie będzie zaglądał tutaj tylko wejdzie na google i wyszuka sobie odpowiednie frazy. Podkręcić można praktycznie wszystko. Procesor, ram, kartę graficzną, dysk twardy, napęd optyczny, usb, internet i ewentualnie inne części. A co najlepsze, to wszystko możemy wykonać za darmo. Ale jak wcześniej wspomniałem, kiedy zaczynamy tą operację to automatycznie zatwierdzając zmiany, zapisują się one gdzieś w części i za pomocą specjalistycznych narzędzi można wykryć, że sprzęt został poddany "overclockingowi" przez co po prostu nie będą chcieli uznać gwarancji. Dlatego wszystko wykonujesz na własną odpowiedzialność.<p>
+
+Przede wszystkim: zasada jest taka, że nie podkręcamy laptopa, netbooka czy inne ustrojstwo-gotowiec. Łatwiej naprawić zwykłego pieca, wymienić podzespół i ogółem majsterkować niż przy czymś w stylu netbook. No i podkręcimy jakąkolwiek część w czymś takim i gwarancja papa. A w notebooku chyba to jest bardzo ważna rzecz.<p>
+
+Jeżeli chodzi o overclocking procka to:<p>
+
+W BIOSie będzie odpowiednia zakładka, gdzie będzie można manipulować ustawieniami procesora, ramu, napięciami oraz resztą "stuffu". Procesor zwykle się podkręca zmieniając tzw: FSB z np: 200 na 333. Zmiana napięcia zwykle jest potrzebna do uzyskania stabilności, jednak zwykle jak podkręcamy procesor równocześnie podkręca się RAM. Warto o tym pamiętać. I zwykle ta część najszybciej wymięka. Polecam się uzbroić w dobrej jakości zasilacz [który powinien się znajdować W KAŻDYM komputerze klasy PC. Nie jakieś badziewie Made in China dołączone do obudowy]. Jeżeli podczas podkręcania uruchomi się komputer bez pisku BIOSu, zapiszczy BIOS wielokrotnie lub ekran będzie cały czas czarny: znaczy to, że przesadziłeś z podkręcaniem. Należy na płycie głównej znaleźć zworkę CMOS [instrukcja płyty głównej się przyda] lub wyjąć bateryjkę BIOS na parę minut.<p>
+
+Jeżeli chodzi o overclocking RAMu to:<p>
+
+...Jest różnie. W BIOS można poprzestawiać tzw. timingi albo po prostu zmienić szybkość. Jednak często są błędy, wieszenia systemu, bluescreeny po oc. A że wraz z podkręceniem procesora, taktowanie powinno automatycznie się podwyższyć to lepiej pominąć tą część. Na domiar złego nie zawsze widać dodatkowej wydajności.<p>
+
+Jeżeli chodzi o overclocking karty graficznej to:<p>
+
+Jeszcze obczajam jego możliwości. Pomocne programy to: <b>Riva Tuner</b>, <b>ATITool</b>, <b>GPU-z</b>, <b>3DMARK06</b>. Polecam zainstalować najnowsze sterowniki do graficznej. Zmieniamy Core clock oraz memory clock. Możemy jeszcze shader clock zmienić. W ATITool będziemy mieli podgląd 3D, który powinien obciążyć nasze GPU. W ATITool jest też opcja znalezienia maksymalnych bezpiecznych wartości. W Riva Tuner powinna być opcja manipulowania szybkością wentylatora. Tutaj resetować komputera podczas zmiany wartości karty graficznej nie będziemy musieli robić. Co do wydajności to jest różnie. Jedna karta jest kompletnie niepodkręcalna, druga ma ogromny potencjał. Moja karta widocznie dużego potencjału nie ma, bowiem dużych skoków FPS nie zauważyłem. Jeszcze ponowie w przyszłości próby.<p>
+
+Ok. Podkręcanie się odbywa dość prosto. Po prostu zwiększamy "Core Clock", "Memory Clock" oraz czasem jest również "Shader Clock". Ja musiałem podkręcać z pomocą dodatkowego stuffu do panelu sterowania Nvidia. Jakie wyniki? Różne. Core clock 513 MHz podkręcony do 650 MHz, Memory clock z 792 MHz do 950 MHz a Shader Clockiem się bawiłem i bawiłem i raz było 1500 i miałem od czasu do czasu ciekawe artefakty, a czasem miałem 1300 MHz i było tak sobie. Ale teraz do wydajności przechodzę. W wielu grach jest wzrost klatek na sekundę. Np: Dziwne GTA4 nagle z 23 klatek dostało kopa i miało 30 klatek w Benchmarku. W Crysis zamiast jakichś marnych 10 - 15 klatek miałem 17 - 30 klatek w misji Frozen Paradise. No i ogólny wzrost klatek. Niestety, w niektórych miałem nawet spadek. Niezauważalny ale jednak. No i w Prototype nie czuć było wzrostu FPS [zawiodłem się optymalizacją...]. Jeszcze będę kombinował, obiecuję, w każdym razie, czy warto? Zależy od modelu graficzej. Niektóre się praktycznie niepodkręcają inne mają ogromny potencjał. I jest to troszkę jak lotto. Graficzna będzie i chłodna i wydajna a czasem będzie wentylator będzie ryć, karta grzać a wydajność niewiele wzrośnie.
+
+<center><h2>7. Problemy z PC</h2></center><p>
+
+<h4>Zależny poziom trudności</h4><p>
+
+Wiadomo, komputer nie jest rzeczą idealną. A jeszcze bardziej dziurawy jest Windows. Teraz napiszę trochę o problemach, które mogą ciebie spotkać i jak je rozwiązać.<p>
+
+a] Blue Screen of Death - Jest to niebieski ekran śmierci, który pojawić się może właściwie o każdej porze, podczas każdej czynności. Kiedy się coś takiego tobie pokaże, odczekaj aż się "zdumpuje" pamięć. Jeżeli komputer się sam nie zresetuje: spisz kod błędu oraz ewentualną przyczynę [jeżeli będzie] a następnie zresetuj komputer. Niebieski ekran śmierci ma nas "chronić" przed potencjalnym uszkodzeniem sprzętu. Jednak spowodować go może praktycznie wszystko. Wina sprzętu, wirus, zawirusowanie [ewentualnie skasowanie] pliku systemowego, błąd sterowników [lub źle napisany sterownik]. Jeżeli będzie już przyczyna napisana to wystarczy wygooglać kod błędu i przyczynę. Potem znaleźć oczywiście rozwiązanie.<p>
+
+- Jeżeli Bluescreen ci się pojawia podczas startu systemu i nie daje się zalogować to załaduj płytkę od Windy i wybierz naprawianie plików systemowych. Jeżeli nadal nie działa to wejdź w trybie awaryjnym do Windowsa. Odpal skanowanie antywirusowe. A jeżeli nadal będzie ci wywalać bluescreena to w trybie awaryjnym z dostępem do sieci wejdź do Windowsa i ściągnij narzędzie do debuggowania od Microsofta. W C:\Windows\Minidump znajdziesz wszystkie zrzuty pamięci. Przebadaj je w programie do debuggowania. Do linii komend dodaj:<br>
+!analyze -v;r;kv;lmtn<br>
+i enter. I sprawdź prawdopodobną przyczynę bluescreena. Wygooglaj kod błędu i przyczynę oraz sprawdź rozwiązanie tego problemu. Kiedy wszystko wykonasz to powinna Winda hulać prawidłowo. Ewentualnie wykonaj punkt 5 w trybie awaryjnym [może masz za słaby antywirus].
+
+- Żeby zapobiec niebieskim ekranom śmierci warto odpalić Windows Update [punkt 3a] i zaktualizować system. Im nowsze sterowniki tym więcej mają łatek i tym mniejsze jest prawdopodobieństwo BSOD'ów.<p>
+
+- Bluescreen może się też pojawić wtedy, kiedy nasz komputer jest uszkodzony, przegrzewa się lub jest niestabilny. Żeby wykluczyć taką możliwość wykonaj punkt pierwszy.<p>
+
+- Można też skorzystać z przywracania systemu. Jeżeli komputer pierwszego dnia dobrze działa a następnego już podczas startu systemu wyskakuje bluescreen to w trybie awaryjnym odpal przywracanie systemu [start -> wszystkie aplikacje -> Akcesoria -> Narzędzia Systemowe -> Przywracanie Systemu] i przywrócić system do dnia, kiedy komputer był jeszcze sprawny. Ewentualnie z płytki Windowsa przywróć system [na płytce od Visty NA PEWNO jest taka opcja. Na płytce starszej wersji tego OS'a nie jestem tego pewny].<p>
+
+- Jeżeli bluescreen pojawia się podczas startu jakiegoś programu, lub gry to: zainstaluj najnowszą wersję tego programu a w przypadku gry zainstaluj najnowszą łatkę. Wykonaj punkt 3. A jeżeli przy starcie gry nadal wyskoczy bluescreen to wykonaj także punkt 2 oraz dodatkowo 1.<p>
+
+- Jeżeli problemu nie rozwiązałeś/aś to napisz do pomocy technicznej Microsoftu. Ewentualnie napisz do mnie w tej sprawie to jeszcze coś pokombinuję.<p>
+
+b] Zawieszenie się systemu<p>
+
+Zwykle przed czymś takim ma nas "chronić" Bluescreen ale zwykle system nie zdąży wywalić bugchecka. Czasem może to być czysty przypadek. Błąd systemu operacyjnego. Czasem program jest źle napisany. Czasem wina sprzętu. Jest z tym różnie.<p>
+
+Wykonaj punkt 1, 3, 4 [jeżeli masz za bardzo zapchany system] i 5. Jeżeli nie pomoże to dodatkowo 2.<p>
+
+c] Komputer zachowuje się niestabilnie<p>
+
+- Windows pisze, że program przestał działać<p>
+
+Jeżeli coś podkręcałeś/aś to znaczy, że przesadziłeś/aś. Jeżeli nie to wykonaj punkt 1, 2 oraz 3.<p>
+
+- Są dziwne błędy w grafice, czarne punkty, białe punkty, nieprawidłowości w obrazie<p>
+
+Jeżeli podkręcałeś/aś kartę graficzną, to znaczy, że karta się przegrzewa. Wykonaj punkt 2, zwiększ obroty wiatraków a jak nie będzie efektów to odrobinę zmniejsz podkręcone częstotliwości lub je w ogóle anuluj. Jeżeli dalej nie będzie efektów, bądź sprzętu nie podkręcałeś to wykonaj punkt 1 i 3.<p>
+
+- Do niestabilności można też zaliczyć Bluescreeny i zwiechy. Jednak je opisałem w punkcie siódmym podpunkt a i b.<p>
+
+I to by było chyba na tyle. Jeżeli chcecie jeszcze bardziej odświeżyć system lub macie inne problemy z komputerem napiszcie do mnie lub napiszcie na forum.<p>
+
+<center><h2>8. Mały przepis</h2></center><p>
+
+Pierwszy punkt wykonujmy co rok, chyba, że będą się dziać dziwne rzeczy z komputerem. Wtedy będzie trzeba od razu działać.<p>
+
+Drugi punkt jest zależny od ilości wentylatorów oraz pomieszczenia. Ale tak co 3/4 roku można odkurzać sprzęt. Jeżeli szybko się pokój a jeszcze szybciej sprzęt kurzy to co pół roku.<p>
+
+Trzeci punkt a] powinniśmy na bieżąco monitorować. W przypadku użytkowników XP i starszych wind to co jakiś miesiąc sprawdzić czy są jakieś aktualizacje. W przypadku użytkowników Visty polecam codziennie bo w parę chwil można sprawdzić czy są jakieś update'y. Troszkę dłużej trwa ich ściąganie i instalacja no ale cóż poradzić, w końcu od czego są łatki? :]<p>
+
+Czwarty punkt a] monitorujemy na bieżąco. Próbujmy nie zapychać na maxa systemu bo to tylko go spowolni. b] możemy wykonywać tak naprawdę kiedy chcemy. Możemy co miesiąc, ale też co rok. Ta druga opcja bardziej da kopa. c] wykonujemy również kiedy chcemy.<p>
+
+Piąty punkt bym radził na bieżąco sprawdzać. Antywirus już powinien sam według własnych ustawień [które powinno się dać edytować], się aktualizować oraz skanować system. Reszta opcji też powinna działać samodzielnie. Jak ktoś zaatakuje system to firewall sam się broni. Jeżeli znajdzie wirusa to kasuje go albo pakuje go do kwarantanny. Jeżeli masz już antywirus to ok. Ale jak mówiłem, nie wszystkie są bardzo skuteczne. A trzeba brać pod uwagę te, które są możliwie jak najlepsze.<p>
+
+Szósty punkt zalecałbym użytkownikom, którzy mają już doświadczenie w komputerach. Podkręcanie komputera powinno być jednorazowe ale jak komuś się chce to może się dalej bawić. Tylko uważnie i bez przesady. Sieć jest pod ręką. A jak nie to przejść się do jakiejś kafejki i poczytać więcej o podkręcaniu.<p>
+
+Siódmy punkt wykonujemy oczywiście wtedy, kiedy pojawi się problem.<p>
+
+I to by było na tyle.<p>
+
+Pozdrawiam,<br>
+Fuadex
+</body>
+</html>
